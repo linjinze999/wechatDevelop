@@ -1,0 +1,146 @@
+.scroll-view_H{
+    white-space: nowrap;
+}
+.scroll-view-item{
+    position: relative;
+    height: 100%;
+    background-size: 100% 100%;
+}
+.scroll-view-item_H{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.bc_blue{
+    background-color: rgb(0,196,255);
+    background-image: url('../../resources/images/img001.jpg');
+}
+.bc_purple{
+    background-color: rgb(146,96,191);
+    background-image: url('../../resources/images/img002.jpg');
+}
+.bc_orange{
+    background-color: rgb(255,191,81);
+    background-image: url('../../resources/images/img003.jpg');
+}
+.bc_red{
+    background-color: rgb(243,83,61);
+    background-image: url('../../resources/images/img004.jpg');
+}
+.bc_green{
+    background-color: rgb(107,194,53);
+    background-image: url('../../resources/images/img005.jpg');
+}
+
+.name{
+    width: 100%;
+    position: absolute;
+    top: 440px;
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    font-weight: bold;
+}
+.title{
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    text-align: center;
+    font-size: 45px;
+    color: #fff;
+}
+.information{
+    width: 100%;
+    position: absolute;
+    top: 440px;
+    left: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(86,36,131);
+}
+.information-detail{
+    color: #fff;
+    font-weight: normal;
+}
+.experience-line{
+    height: 150px;
+    width: 0;
+    position: absolute;
+    top: 440px;
+    left: 50%;
+    border-left: 1px solid rgba(255,255,255,0.5);
+}
+.experience-line-round{
+    width: 8px;
+    height: 8px;
+    position: relative;
+    left: -6px;
+    border-radius: 100%;
+    border: 2px solid #fff;
+    background-color: rgb(255,191,81);
+}
+.experience-line-round2{
+    top: 60px;
+}
+.experience-line-round3{
+    top: 120px;
+}
+.ex-project{
+    position: absolute;
+    top: 450px;
+    width: 48%;
+    text-align: right;
+    color: #fff;
+    font-weight: bold;
+}
+.ex-practice{
+    position: absolute;
+    top: 520px;
+    left: 53%;
+    width: 47%;
+    color: #fff;
+    font-weight: bold;
+}
+.ex-name{
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+}
+.skills-text1{
+    margin-left: 40%;
+    color: #81C2D6;
+}
+.skills-text2{
+    margin-left: 5%;
+    color: #8192D6;
+}
+.skills-text3{
+    margin-left: 60%;
+    color: #D9B3E6;
+}
+.skills-text4{
+    margin-left: 20%;
+    color: #DCF7A1;
+}
+.skills-text5{
+    margin-left: 55%;
+    color: #83FCD8;
+}
+
+.communication-img{
+    position: absolute;
+    left: 100px;
+    top: 190px;
+    width: 150px;
+    height: 150px;
+    background-size: 100% 100%;
+}
+.communication-text{
+    position: absolute;
+    top: 440px;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+}

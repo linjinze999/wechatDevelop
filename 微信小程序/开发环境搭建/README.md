@@ -19,17 +19,19 @@
 ***Mac测试可用，Windows测试可用***
 
 1. 下载开发工具0.7，安装并扫码登录，然后关闭（不要退出登录）
-2. 下载开发工具0.9，安装后直接打开（***注意：0.7版本已登录***）
+2. 下载开发工具0.9，在0.7同目录下安装，然后直接打开（***注意：0.7版本已登录***）
 3. 打开『微信Web开发者工具』的程序目录
   * Windows：使用资源管理器查看
   * Mac：右键点击图标，选择『显示包内容』
-4. 进入程序目录后，替换以下文件（只需要替换0.9版本里的，0.7版本用来登陆）：
+4. 进入程序目录后，替换以下文件（若79安装目录不同，只需要替换0.9版本里的，0.7版本用来登陆）：
   * Windows：
     * \package.nw\app\dist\components\create\createstep.js
     * \package.nw\app\dist\stroes\projectStores.js
+    * \package.nw\app\dist\weapp\appservice\asdebug.js
   * Mac：
     * /Resources/app.nw/app/dist/components/create/createstep.js
     * /Resources/app.nw/app/dist/stroes/projectStores.js
+    * /package.nw/app/dist/weapp/appservice/asdebug.js
   
   注意，这里微信工程师拼写错了，***是stroes没错***！！！
 
@@ -71,12 +73,21 @@
   * 问题原因：please bind your wechat account to the appid first
   * 解决方案：先使用0.7版本的进行扫码登陆，登陆成功后，再用0.9的版本打开就直接进入了。
     * 0.7版本地址：http://dldir1.qq.com/WechatWebDev/release/0.7.0/wechat_web_devtools_0.7.0.dmg
+5. appid错误
+  * 问题原因：没有替换文件
+  * 解决方案：参考“使用教程”中的文件替换
+6. 新建项目报错：找不到app.js、app.json、app.wxss
+  * 问题原因：该三个文件是一个项目必须的
+  * 解决方案：在新建项目时选择空文件夹，开发者工具会提示，是否需要创建一个 quick start 项目，选择「是」，开发者工具会帮助我们在开发目录里生成一个简单的 demo。
 
 ##工具截图
 
 ![IDE](https://cloud.githubusercontent.com/assets/876707/18745196/f4f0488e-80f3-11e6-844b-f45d7e52a23c.png)
 
 ![IDE](https://cloud.githubusercontent.com/assets/876707/18745200/f7a74870-80f3-11e6-83cf-df00f7f87f56.png)
+
+##相关教程
+[https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1474632113_xQVCl&token=&lang=zh_CN](https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1474632113_xQVCl&token=&lang=zh_CN)
 
 ##相关链接
 

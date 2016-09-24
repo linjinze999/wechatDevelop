@@ -1,0 +1,61 @@
+<view class="page">
+    <scroll-view scroll-y="true" style="height: 667px;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+        <view id="blue" class="scroll-view-item bc_blue">
+            <text class="name">姓名：{{name}}</text>
+        </view>
+        <view id="purple" class="scroll-view-item bc_purple">
+            <text class="title">基本资料</text>
+            <view class="information">
+                <view>
+                    职位：
+                    <text class="information-detail">{{information.position}}</text>
+                </view>
+                <view>
+                    籍贯：
+                    <text class="information-detail">{{information.nativePlace}}</text>
+                </view>
+                <view>
+                    手机：
+                    <text class="information-detail">{{information.tellphone}}</text>
+                </view>
+                <view>
+                    邮箱：
+                    <text class="information-detail">{{information.eMail}}</text>
+                </view>
+            </view>
+        </view>
+        <view id="orange" class="scroll-view-item bc_orange">
+            <text class="title">工作经历</text>
+            <view class="experience-line">
+                <view class="experience-line-round"></view>
+                <view class="experience-line-round experience-line-round2"></view>
+                <view class="experience-line-round experience-line-round3"></view>
+            </view>
+            <view class="ex-project">
+                <view>{{experience.projects[0].startTime}}-{{experience.projects[0].endTime}}</view>
+                <view>项目：{{experience.projects[0].projectName}}</view>
+                <view>职位：{{experience.projects[0].position}}</view>
+            </view>
+            <view class="ex-practice">
+                <view>{{experience.practice[0].startTime}}-{{experience.practice[0].endTime}}</view>
+                <view>实习：{{experience.practice[0].company}}</view>
+                <view>职位：{{experience.practice[0].position}}</view>
+            </view>
+        </view>
+        <view id="red"  class="scroll-view-item bc_red">
+            <text class="title">擅长技能</text>
+            <view class="information">
+                <view wx:for="{{skills}}">
+                    <text class="skills-text{{index%5+1}}">{{item}}</text>
+                </view>
+            </view>
+        </view>
+        <view id="green" class="scroll-view-item bc_green">
+            <text class="title">联系我</text>
+            <view class="communication-img" style="background-image: url('{{communication}}');"></view>
+            <view class="communication-text">
+                打开微信扫一扫吧！
+            </view>
+        </view>
+    </scroll-view>
+</view>
